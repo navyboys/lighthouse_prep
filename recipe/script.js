@@ -3,13 +3,11 @@ $(document).ready(function() {
     $('.photos').hide();
   });
 
-  $('.incredient button').click(function() {
-    $(this).parent().addClass('purchased');
-    $(this).hide();
+  $('.incredient input').click(function() {
+    $(this).parent().toggleClass('purchased');
   });
 
-  $('.direction button').click(function() {
-    $(this).parent().addClass('done');
-    $(this).hide();
+  $('.direction input').click(function() {
+    $(this).parent().toggleClass('done');
   });
 });
